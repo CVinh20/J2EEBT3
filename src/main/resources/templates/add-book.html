@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <h1>Thêm sách mới</h1>
+    <form th:action="@{/books/add}" th:object="${book}" method="post">
+        Tiêu đề: <input type="text" th:field="*{title}" required /><br/>
+        Tác giả: <input type="text" th:field="*{author}" required /><br/>
+        <button type="submit">Thêm</button>
+    </form>
+</head>
+<body>
+
+</body>
+</html>
